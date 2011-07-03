@@ -1,0 +1,88 @@
+<html>
+<title>find the number is?</title>
+<head>
+<script type="text/javascript">
+
+function check()
+    {
+    var c=parseInt(document.getElementById('a').value);
+       
+       if(c==1 || c==0)
+        {
+         alert("these are natural or whole numbers");
+        } 
+
+         else if(isNaN(c) || c=="")
+           {
+           alert("null, alphabets and special characters are not allowed");
+           }
+       
+       }
+
+ function prime()
+  {
+  var c=parseInt(document.getElementById('a').value);
+
+  var i;
+    
+  for (i=2; i < c;i++ )
+      
+       {
+
+         var n = c%i;
+         if (n==0)
+	  {
+              alert("not Prime!");
+              break;
+            }
+       }
+      
+         if(i == c)
+             {
+               alert("Prime number!");
+             }
+
+   }
+
+  function oddeven()
+    {
+
+    var c=parseInt(document.getElementById('a').value);
+
+          if (c>=2 && c%2==0)
+	   {
+              alert("the number is even number!");
+              }
+
+          else if(c%2==1)
+       
+             {
+             alert("the number is odd");
+             }
+        
+     }
+
+function findnum()
+ {
+   prime();
+   oddeven();
+ }
+
+
+</script>
+</head>
+<body>
+<form>
+<center>
+<table>
+<tr>
+<td>Enter any number:</td>
+<td><input type="text" onkeyup="check()" id="a"></td>
+</tr>
+</table>
+<input type="button" value="check" onclick="findnum()">
+</center>
+</form>
+</body>
+</html>
+

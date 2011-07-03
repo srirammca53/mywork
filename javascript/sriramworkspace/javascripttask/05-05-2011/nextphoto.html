@@ -1,0 +1,64 @@
+<html>
+<head>
+<script type="text/javascript">
+var myImg= new Array(3)
+  myImg[0]= "1.jpg";
+  myImg[1]= "2.jpg";
+  myImg[2]= "3.jpg";
+  myImg[3]= "4.jpg";
+
+// Tell browser where to find the image
+
+
+// Tell browser the type of file
+
+
+var i = 0;
+
+// Create function to load image
+function loadImg(){
+  document.imgSrc.src =  myImg[i];
+}
+
+// Create link function to switch image backward
+function prev(){
+  if(i<1){
+    var l = i
+  } else {
+    var l = i-=1;
+  }
+  document.imgSrc.src = myImg[l];
+}
+
+// Create link function to switch image forward
+function next(){
+  if(i>2){
+    var l = i
+  } else {
+    var l = i+=1;
+  }
+  document.imgSrc.src = myImg[l];
+}
+
+// Load function after page loads
+window.onload=loadImg;
+
+</script>
+
+</head>
+
+<body>
+<div style="width:400px; height:300px; margin: auto;">
+<img name="imgSrc" id="imgSrc" width="500px" height="300px">
+</div>
+<!-- Controller -->
+<table width="400"  border="0" cellspacing="0" cellpadding="0" style="border:1px solid #000000; width:400px; margin: auto;">
+  <tr>
+    <td align="center"><input type="button" value="previous" onClick="prev();"></td>
+    <td align="center"><input type="button" value="next"  onClick="next();"></td>
+  </tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+<title>swap without temp</title>
+<head>
+<script type="text/javascript">
+function swap2()
+{
+var a=parseInt(document.getElementById('a').value);
+var b=parseInt(document.getElementById('b').value);
+
+
+alert("before swaping: a="+a+'\n'+"b="+b);
+a = a+b;
+b=a-b;
+a=a-b;
+alert("after swaping: a="+a+'\n'+"b="+b);
+
+}
+</script>
+
+
+<body>
+<form>
+<center>
+<table>
+<tr>
+<td>Enter a:</td>
+<td><input type="text" id="a"></td>
+</tr>
+<tr>
+<td>Enter b:</td>
+<td><input type="text" id="b"></td>
+</tr>
+</table>
+<input type="button" value="check" onclick="swap2()">
+</center>
+</form>
+</body>
+<html>

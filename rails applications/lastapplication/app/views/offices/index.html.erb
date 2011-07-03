@@ -1,0 +1,29 @@
+<h1>Listing offices</h1>
+
+<table>
+  <tr>
+    <th>Emp name</th>
+    <th>Emp age</th>
+    <th>Emp salary</th>
+    <th>Emp experience</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @offices.each do |office| %>
+  <tr>
+    <td><%= office.emp_name %></td>
+    <td><%= office.emp_age %></td>
+    <td><%= office.emp_salary %></td>
+    <td><%= office.emp_experience %></td>
+    <td><%= link_to 'Show', office %></td>
+    <td><%= link_to 'Edit', edit_office_path(office) %></td>
+    <td><%= link_to 'Destroy', office, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Office', new_office_path %>

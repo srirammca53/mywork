@@ -1,0 +1,31 @@
+<p class="notice"><%= notice %></p>
+ 
+<p>
+  <b>commenter:</b>
+  <%= @cbook.commenter %>
+</p>
+ 
+<p>
+  <b>body:</b>
+  <%= @cbook.body %>
+</p>
+ 
+<p>
+  <b>email:</b>
+  <%= @cbook.email %>
+</p>
+<p>
+  <b>website:</b>
+  <%= @cbook.website %>
+</p>
+<p>
+  <b>area:</b>
+  <%= @cbook.area %>
+</p>
+ <p>
+  <b>pincode:</b>
+  <%= @cbook.pincode %>
+</p>
+
+<%= link_to 'Edit comment', edit_cbook_path(@cbook) %> |
+<%= link_to 'Back to comments', cbooks_path %> |

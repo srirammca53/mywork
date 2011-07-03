@@ -1,0 +1,41 @@
+<html>
+<title>Findthe number is?</title>
+<head>
+<script type="text/javascript">
+function prime()
+{
+document.getElementById('a');
+//document.write("you entered:"+a.value);
+
+ var i;
+    for (i=2; i < a.value ;i++ )
+{
+      var n = a.value%i;
+      if (n==0)
+	{
+           alert("not Prime!");
+           break;
+          }
+}
+       if(i == a.value)
+         {
+         alert("Prime number!");
+       }
+}
+</script>
+
+
+<body>
+<form>
+<center>
+<table>
+<tr>
+<td>Enter any number:</td>
+<td><input type="text" id="a"></td>
+</tr>
+</table>
+<input type="button" value="check" onclick="prime()">
+</center>
+</form>
+</body>
+<html>

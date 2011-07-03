@@ -1,0 +1,28 @@
+<html>
+<title>palindrome</title>
+<head>
+<script type="text/javascript">
+function isPalindrome()
+{
+var word=prompt("enter the word","Razar");
+
+var i;
+for (i = 0; i < word.length; i++) 
+{
+if (word.charAt(i) != word.charAt(word.length-1-i))
+ {
+document.write("not a palindrome");
+}
+
+}
+
+
+document.write("given string is palindrome");
+}
+</script>
+<body>
+Click the button to enter the string whether it is palindrome or not<br/>
+<input type="button" value="enter" onclick="isPalindrome()">
+</body>
+</html>
+

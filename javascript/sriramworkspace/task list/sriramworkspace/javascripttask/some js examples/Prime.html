@@ -1,0 +1,52 @@
+<html>
+<title>Findthe number is?</title>
+<head>
+<script type="text/javascript">
+function prime()
+{
+var c=parseInt(document.getElementById('a').value);
+//document.write("you entered:"+a.value);
+
+if(c==1 || c==0)
+{
+alert("these are natural or whole numbers");
+return false;
+}
+if(isNaN(c) || c=="")
+{
+alert("null or alphabets are not allowed");
+return false;
+}
+
+ var i;
+    for (i=2; i < c;i++ )
+{
+      var n = c%i;
+      if (n==0)
+	{
+           alert("not Prime!");
+           break;
+          }
+}
+       if(i == c)
+         {
+         alert("Prime number!");
+       }
+}
+</script>
+
+
+<body>
+<form>
+<center>
+<table>
+<tr>
+<td>Enter any number:</td>
+<td><input type="text" id="a"></td>
+</tr>
+</table>
+<input type="button" value="check" onclick="prime()">
+</center>
+</form>
+</body>
+<html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
+<title>Image task 28-04-2011</title>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+   
+<script type="text/javascript">
+
+function pic()
+{
+if(pic1())
+{
+ objectlink=document.getElementById('flower').src="images/bg1.jpg";
+
+}
+function pic2()
+{
+ objectlink=document.getElementById('flower').src="images/earth.jpeg";
+
+}
+function pic3()
+{
+ objectlink=document.getElementById('flower').src="images/Pyramids1.jpg";
+
+}
+function pic4()
+{
+ 
+objectlink=document.getElementById('flower').src="images/tajmahal.jpg";
+
+}
+function pic5()
+{
+ 
+objectlink=document.getElementById('flower').src="images/world.jpg";
+
+}
+}
+
+/*function changepic()
+{
+
+objectlink=document.getElementById("flower").src = "images/friend.jpg";
+    
+}*/
+
+</script>
+
+</head>
+  <body id="homebackground">
+
+    <div id="homeheader">
+        
+    </div>
+
+    <div id="leftsidebar">
+      <p><b>Select one to view</b></p>
+      <p onclick="pic()">flower</p>
+      <p onclick="pic()">earth</p>
+      <p onclick="pic()">pyramid</p>
+      <p onclick="pic()">tajmahal</p>
+      <p onclick="pic()">myworld</p>
+    </div>
+
+    <div id="rightsidebar">
+       
+       <img id="flower" src="objectlink" width="600px" height="500px">
+       
+    </div>
+
+</body>
+</html>

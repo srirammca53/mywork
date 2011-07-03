@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<title>Personal information</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+function personalDetails()
+{
+//first name validation
+var fname=document.getElementById('fname').value;
+if(fname.length>8 | fname.length<6)
+{
+var string=("Please Enter min 6 characters and max 8 characters");
+document.getElementById('alert').innerHTML=string;
+document.f.fname.focus();
+
+}
+if(fname=="" | fname==null )
+{
+var string="Please Enter Your First Name";
+document.getElementById('alert').innerHTML=string;
+document.f.fname.focus();
+return false;
+}
+
+
+//last name validations
+var lname=document.getElementById('lname').value;
+if(lname.length>8 | lname.length<6)
+{
+var string="Please Enter min 6 characters and max 8 characters";
+document.getElementById('alert').innerHTML=string;
+document.f.lname.focus();
+}
+if(lname=="" | lname==null)
+{
+
+var string="Please Enter Your last Name";
+document.getElementById('alert').innerHTML=string;
+document.f.lname.focus();
+return false;
+}
+
+
+
+
+//Email Validations
+var x=document.getElementById('email').value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+   var string="Please Enter a valid E-mail id";
+   document.getElementById('alert').innerHTML=string;
+    document.f.email.focus();
+  return false;
+  }
+
+
+//gender validations
+if(document.f.gender[0].checked != true && document.f.gender[1].checked != true)
+          {
+		 var string="Please Enter Gender";
+                     document.getElementById('alert').innerHTML=string;
+		 document.f.gender[0].focus();
+		 return false;
+         
+	}
+	if(document.f.gender[0].checked==true)
+	{
+ 	//alert(document.f.gender[0].value);
+      
+              
+   	}
+	if(document.f.gender[1].checked==true)
+	{	
+       	//alert(document.f.gender[1].value);
+           
+       	}
+       
+            
+        
+
+//interest validations
+    if(document.f.ints[0].checked!=true && document.f.ints[1].checked!=true && document.f.ints[2].checked!=true && document.f.ints[3].checked!=true)
+	{
+	var string="Please check that you are not selected any option in the Interests";
+          document.getElementById('alert').innerHTML=string;
+          document.f.ints[0].focus();
+	return false;
+	}
+
+	if(document.f.ints[0].checked==true)
+	{
+	//alert(document.f.ints[0].value); 
+	
+	}
+ 	
+	if(document.f.ints[1].checked==true)
+	{
+	//alert(document.f.ints[1].value);
+	}
+
+	if(document.f.ints[2].checked==true)
+	{
+	//alert(document.f.ints[2].value);
+	}
+
+	if(document.f.ints[3].checked==true)
+	{
+	//alert(document.f.ints[3].value);
+	}
+
+//country
+if(document.f.country.value)
+{
+country={"ind","pak"};
+country[ind][]={"Ap","MP","up","Delhi"};
+country[pak][]={"punjab","islamabad","hyderabad"};
+}
+
+
+//address valiations
+var address=document.getElementById('disp').value;
+if(address=="" | address==null)
+{
+var string="Please Enter Your Address";
+document.getElementById('alert').innerHTML=string;
+return false;
+}
+
+
+//website validations
+var url=document.getElementById('web').value;
+var str=url.substring(0,11);
+var test="http://www.";
+if(str!=test)
+{
+alert("invalid");
+}
+
+//upload image
+    var filename = document.getElementById('image1').value;
+    var ext;
+    var valid = true
+    
+    if (filename == '')
+    {
+     var string="Please include a file.";
+     document.getElementById('alert').innerHTML=string;
+    }
+        ext = filename.substring(filename.length - 4, filename.length);
+        if (ext!= '.JPG' | ext!= '.jpg'| ext!= '.PNG' |ext!= '.png'| ext!= '.GIF'| ext!= '.gif' )
+      {
+        
+        alert("The file must be a JPG,PNG or GIF.");
+      }           
+      return false;
+}
+
+</script>
+</head>
+
+<body id="body">
+<form name="f" id="f" onsubmit="return personalDetails();">
+<center><p id="caption">Error message</p>
+<div class="div1">
+<span id="alert">Errors Will display here</span>
+</div>
+<br/>
+<p id="caption">Personal Information</p>
+<table class="table1">
+
+<tr>
+<td class="td2">First Name:</td>
+<td class="td2"><input type="text" name="firstname" id="fname"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Last Name:</td>
+<td class="td2"><input type="text" name="lastname" id="lname"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Date of Birth:</td>
+<td class="td2">
+<select name="Dob" id="day1">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="Dob" id="month">
+<option value="JAN">JAN</option>
+<option value="FEB">FEB</option>
+<option value="MAR">MAR</option>
+<option value="APR">APR</option>
+<option value="MAY">MAY</option>
+<option value="JUN">JUN</option>
+<option value="JUL">JUL</option>
+<option value="AUG">AUG</option>
+<option value="SEP">SEP</option>
+<option value="OCT">OCT</option>
+<option value="NOV">NOV</option>
+<option value="DEC">DEC</option>
+</select>
+<select name="Dob" id="year">
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+</select>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Email :</td>
+<td class="td2"><input type="text" name="email" id="email"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Gender :</td>
+<td class="td2"><input type="radio" name="gender" value="male"/>Male &nbsp;&nbsp;
+<input type="radio" name="gender" value="female" />Female</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+
+<tr>
+<td class="td2">Interests :</td>
+<td class="td2">
+<input type="checkbox" name="ints" value="crirket" />crirket&nbsp;
+<input type="checkbox" name="ints" value="chess" />Chess&nbsp;
+<input type="checkbox" name="ints" value="basketball" />paint&nbsp;
+<input type="checkbox" name="ints" value="stamps" />Stamps&nbsp;
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Select Your Country :</td>
+<td class="td2">
+<select name="country" id="country">
+<option value=""></option>
+<option value=""></option>
+
+</select>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Select Your State :</td>
+<td class="td2">
+<select name="state" id="state">
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+</select>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Address :</td>
+<td class="td2">
+<textarea rows="10" cols="50" id="disp" value="address">
+</textarea>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Website:</td>
+<td class="td2"><input type="text" name="website" id="web"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">UpLoad image :</td>
+<td class="td2"><input type="text" name="upimage" id="img"><input type="file" name="fileset" id="image1"></td>
+<td class="td2"></td>
+</tr>
+</table>
+
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

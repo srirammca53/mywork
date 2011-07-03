@@ -1,0 +1,119 @@
+<html>
+<title>form</title>
+<head>
+
+
+</head>
+<body>
+
+<center>
+<script type="text/javascript">
+
+function checkDetails(){
+document.getElementById('string').value;
+//alert(document.getElementById('string').value);
+var total="";
+total+=(document.getElementById('string').value);
+total+=",";
+
+	if(document.f.gender[0].checked != true && document.f.gender[1].checked != true){
+		alert("Please select the gender...!");
+		document.f.gender[0].focus();
+		return false;
+         
+	}
+	if(document.f.gender[0].checked==true)
+	{
+ 	//alert(document.f.gender[0].value);
+      total+=(document.f.gender[0].value);
+      total+=",";
+         
+      
+   	}
+	if(document.f.gender[1].checked==true)
+	{	
+       	//alert(document.f.gender[1].value);
+            total+=(document.f.gender[1].value);
+            total+=",";
+	}
+
+   	
+          if(document.f.skills[0].checked!=true && document.f.skills[1].checked!=true)
+	{
+	alert("No options slected ");
+	
+	}
+
+	if(document.f.skills[0].checked==true)
+	{
+	//alert(document.f.skills[0].value); 
+	total+=(document.f.skills[0].value); 
+	total+=",";
+
+	}
+ 	
+	if(document.f.skills[1].checked==true)
+	{
+	//alert(document.f.skills[1].value);
+	total+=(document.f.skills[1].value); 
+	total+=",";
+	}
+
+
+if(document.f.country.value)
+{
+//alert(document.f.country.value);
+total+=(document.f.country.value);
+
+
+}
+//document.write(total);
+document.getElementById('disp').value=total;
+}
+</script>
+<form name ="f" id="f">
+<table border="0px">
+<tr>
+<td>
+Enter name:
+</td><td><input type="text" id="string"></td>
+<tr>
+<td>Gender</td>
+<td>
+
+<input type="radio" name="gender" value="male"/>Male<br />
+<input type="radio" name="gender" value="female" />Female
+
+</td>
+</tr>
+<tr>
+<td>
+skills
+</td>
+<td>
+
+<input type="checkbox" name="skills" value="C" />C<br />
+<input type="checkbox" name="skills" value="C++" />C++<br/>
+
+</td>
+</tr> 
+<tr>
+<td>select country</td>
+<td><select name="country" id="country">
+<option >India</option>
+<option>Srilanka</option>
+<option>America</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Your details</td><td><textarea rows="4" cols="20" id="disp" value="disp">
+</textarea></td>
+</tr> 
+</table>
+<input type="button" value="display" onclick="checkDetails()"/>
+</form>
+</center>
+</body>
+</html>
+

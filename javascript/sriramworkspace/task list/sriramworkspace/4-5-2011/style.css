@@ -1,0 +1,42 @@
+#body
+{
+background-color:green;
+color:black;
+text-align:center;
+}
+
+.div1 {
+        background-color:white;
+        border:1px solid black;
+	height: 100px;
+	width: 600px;
+	float: center;
+        
+	}
+
+
+p
+{
+color:white;
+text-align:center;
+}
+
+.table1
+{
+background-color:white;
+border:1px solid black;
+width:780px;;
+height:700px;
+text-align:right;
+color:black;
+}
+
+.td2
+{
+width:260px;
+height:20px;
+color:black;
+text-align:left;
+padding:10px;
+}
+

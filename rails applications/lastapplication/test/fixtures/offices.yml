@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  emp_name: MyString
+  emp_age: 1
+  emp_salary: 1
+  emp_experience: 1
+
+two:
+  emp_name: MyString
+  emp_age: 1
+  emp_salary: 1
+  emp_experience: 1

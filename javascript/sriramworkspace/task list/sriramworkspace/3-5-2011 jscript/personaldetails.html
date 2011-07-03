@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<title>Personal information</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+function personalDetails()
+{
+
+//first name validation
+var fname=document.getElementById('fname').value;
+if(fname.length>8 | fname.length<6)
+{
+var string="Please Enter min 6 characters and max 8 characters";
+document.getElementById('alert').innerHTML=string;
+document.f.fname.focus();
+}
+if(fname=="" | fname==null )
+{
+var string="Please Enter Your First Name";
+document.getElementById('alert').innerHTML=string;
+document.f.fname.focus();
+}
+if(fname==/^[0-9]$/)
+{
+var string="Please enter only aplhabets";
+document.getElementById('alert').innerHTML=string;
+}
+
+//last name validations
+var lname=document.getElementById('lname').value;
+if(lname.length>8 | lname.length<6)
+{
+var string="Please Enter min 6 characters and max 8 characters";
+document.getElementById('alert').innerHTML=string;
+document.f.lname.focus();
+}
+if(lname=="" | lname==null)
+{
+
+var string="Please Enter Your last Name";
+document.getElementById('alert').innerHTML=string;
+document.f.lname.focus();
+}
+
+//Dob Validations
+
+
+//Email Validations
+var x=document.getElementById('email').value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+   var string="Please Enter a valid E-mail id";
+   document.getElementById('alert').innerHTML=string;
+   
+  }
+
+
+//gender validations
+if(document.f.gender[0].checked != true && document.f.gender[1].checked != true)
+          {
+		 var string="Please Enter Gender";
+                     document.getElementById('alert').innerHTML=string;
+		 document.f.gender[0].focus();
+		 
+         
+	}
+	if(document.f.gender[0].checked==true)
+	{
+ 	//alert(document.f.gender[0].value);
+      
+              
+   	}
+	if(document.f.gender[1].checked==true)
+	{	
+       	//alert(document.f.gender[1].value);
+       	}
+
+//interest validations
+    if(document.f.ints[0].checked!=true && document.f.ints[1].checked!=true && document.f.ints[2].checked!=true && document.f.ints[3].checked!=true)
+	{
+	var string="Please check that you are not selected any option in the Interests";
+          document.getElementById('alert').innerHTML=string;
+	document.f.ints[0].focus();
+	}
+
+	if(document.f.ints[0].checked==true)
+	{
+	//alert(document.f.ints[0].value); 
+	
+	}
+ 	
+	if(document.f.ints[1].checked==true)
+	{
+	//alert(document.f.ints[1].value);
+	}
+
+	if(document.f.ints[2].checked==true)
+	{
+	//alert(document.f.ints[2].value);
+	}
+
+	if(document.f.ints[3].checked==true)
+	{
+	//alert(document.f.ints[3].value);
+	}
+
+if(document.f.country.value)
+{
+
+}
+//states validations
+
+
+//address valiations
+var address=document.getElementById('disp').value;
+if(address=="" | address==null)
+{
+var string="Please Enter Your Address";
+document.getElementById('alert').innerHTML=string;
+
+}
+
+
+//website validations
+var url=document.getElementById('web').value;
+var httppos=url.indexOf("http");
+var colonpos=url.indexOf("://");
+var wwwpos=url.indexOf("www");
+var dotpos=url.lastIndexOf(".");
+if (httppos>4 || colonpos>5 || colonpos<5 || wwwpos>10 || wwwpos<7|| dotpos<httptpos+2 || dotpos+2>=url.length)
+  {
+   var string="Please Enter a valid Web URL";
+   document.getElementById('alert').innerHTML=string;
+  
+  }
+/*
+//upload image
+    var filename = document.getElementById('image1').value;
+    var ext;
+    var valid = true
+    var Img1 = new Image()
+    alert("hi");
+     alert(image1);
+     if (filename == '')
+    {
+      valid = false;
+      var string="Please include a file.";
+      document.getElementById('alert').innerHTML=string;
+    }
+    if
+    {  
+      ext = filename.substring(filename.length - 3, filename.length);
+      alert("hi");
+      if (ext!= 'JPG' | ext!= 'PNG' | ext!= 'GIF')
+      {
+        valid = false;
+        alert("The file must be a JPG,PNG or GIF.");
+      }
+      
+        {
+          document.form1.height.value = Img1.height;
+          document.form1.width.value = Img1.width;
+        }
+      }
+    
+    return valid
+*/
+/*
+states['India'] = '|New Delhi||Andaman/Nicobar Islands|Andhra Pradesh|Tamil Nadu|Tripura|Uttaranchal|Uttar Pradesh|West Bengal';
+states['China'] = '|Beijing||Anhui|Chongqing|Fujian|Gansu';
+states['Bangladesh'] = '|Dhaka||Barisal|Chittagong|Khulna|Rajshahi|Sylhet';
+*/
+return false;
+}
+</script>
+</head>
+
+<body id="body">
+<form name="f" id="f">
+<center><p id="caption">Error message</p>
+<div class="div1">
+<span id="alert">Errors Will display here</span>
+</div>
+<br/>
+<p id="caption">Personal Information</p>
+<table class="table1">
+
+<tr>
+<td class="td2">First Name:</td>
+<td class="td2"><input type="text" name="firstname" id="fname"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Last Name:</td>
+<td class="td2"><input type="text" name="lastname" id="lname"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Date of Birth:</td>
+<td class="td2"><input type="text" name="Dob" id="dob"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Email :</td>
+<td class="td2"><input type="text" name="email" id="email"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Gender :</td>
+<td class="td2"><input type="radio" name="gender" value="male"/>Male &nbsp;&nbsp;
+<input type="radio" name="gender" value="female" />Female</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+
+<tr>
+<td class="td2">Interests :</td>
+<td class="td2">
+<input type="checkbox" name="ints" value="crirket" />crirket&nbsp;
+<input type="checkbox" name="ints" value="chess" />Chess&nbsp;
+<input type="checkbox" name="ints" value="basketball" />paint&nbsp;
+<input type="checkbox" name="ints" value="stamps" />Stamps&nbsp;
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Select Your Country :</td>
+<td class="td2">
+<select name="country" id="country">
+<option value="india" id="india">India</option>
+<option value="china" id="srilanka">Srilanka</option>
+<option value="Bangladesh" id="america">America</option>
+</select>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Select Your State :</td>
+<td class="td2">
+<select name="state" id="state">
+<option value=""></option>
+<option value=""></option>
+<option value=""></option>
+</select>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Address :</td>
+<td class="td2">
+<textarea rows="10" cols="50" id="disp" value="address">
+</textarea>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Website:</td>
+<td class="td2"><input type="text" name="website" id="web"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">UpLoad image :</td>
+<td class="td2"><input type="text" name="upimage" id="img"><input type="file" name="filesent" id="image1"></td>
+<td class="td2"></td>
+</tr>
+</table>
+
+<input type="button" value="submit" onclick="personalDetails()">
+
+
+
+
+
+</form>
+</body>
+</html>

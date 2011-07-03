@@ -1,0 +1,159 @@
+<html>
+ <title>cookies</title>
+ <head>
+   <script type="text/javascript">
+	function validation()
+	{
+	 var user=document.f.user.value;
+ 	 var pwd=document.f.pwd.value;
+	 var time=document.f.time.value;
+ 	 if(user=="" || user==null)
+		{
+		  alert("please Enter your user name");
+		  document.f.user.focus();
+		  return false;
+		}
+	if(pwd=="" || pwd==null)
+		{
+		  alert("please Enter your password");
+		  document.f.pwd.focus();
+		  return false;
+		}
+	if(time=="" || time==null || isNaN(time)) 
+		{
+		  alert("please Enter time for cookies in Digits");
+		  document.f.time.focus();
+		  return false;
+		}
+	
+		
+	}
+
+
+
+	function createCookie(name,value,days) {
+		var days=document.f.days.value;
+		var username=document.f.username.value;
+		if(days){
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+		}
+	else var expires = "";
+	
+	document.cookie =username+"="+username+expires+"; path=/";
+	
+		}
+
+	function readCookie(username) {
+	var username = username + "=";
+	//var pwd = pwd + "=" ;
+	var ca = document.cookie.split(';');
+	
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(username) == 0) return c.substring(username.length,c.length);
+	} 
+	return null;
+	}
+
+	function eraseCookie(username) {
+	var days=document.f.days.value;
+	createCookie(user,"",-days);
+	  	}
+
+	function login()
+	  {
+    	  validation();
+	  createCookie();
+ 	  readCookie();
+	  eraseCookie();
+	  }
+
+
+	
+   </script>
+ </head>
+    
+      <body bgcolor="green">
+	<hr >
+	<center>
+	<img src="Gmail.png" align="center" width="400px" height="150px">
+	</center>
+	<hr />
+ 	<br>
+	<marquee bgcolor="black" behaviour="alternate">
+	<font color="yellow">Please enter Login details</font>
+	</marquee>
+	<br>
+	<br>
+	<form name="f" id="f" method="get" onsubmit="return login();">
+	<table width="400px" height="200px" cellspacing="0px" cellpadding="2px" align="center" border="0px" bgcolor="pink">
+	<tr>
+	<td width="280px">Enter User Name</td>
+	<td width="120px"><input type="text" name="username" id="username"></td>
+	</tr>
+	<tr>
+	<td width="280px">Enter Your Password</td>
+	<td width="120px"><input type="password" name="passwd" id="passwd"></td>
+	</tr>
+	<tr>
+	<td width="280px" align="right"><input type="checkbox" name="remme" id="remme"></td>
+	<td width="120px">Remember me</td>
+	</tr>
+	<tr>
+	<td width="280px">Enter time to cookies</td>
+	<td width="120px"><input type="text" name="days" id="days"></td>
+	</tr>
+	<tr>
+	<td width="280px" align="right"><input type="submit"   value="Sign in"  ></td>
+	<td width="120px">&nbsp;</td>
+	</tr>
+	</table>
+	<center>
+	<br>
+	<br>
+	<input type="submit" value="delete cookies" onclick="eraseCookie();">
+	</center>	
+	</form>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

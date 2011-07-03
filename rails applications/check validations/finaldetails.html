@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<title>Finalinformation</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+
+
+function getDates(val){
+//alert(val);
+var m=1;
+switch(val)
+   {
+      
+      case 'JAN':   document.f.day.options[0] =new Option('DAY');
+		for(var m=1;m<32;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+      case 'FEB':   
+                   var year=document.getElementById('year').value;
+                    if(year%4==0)
+                    {
+		for(var m=1;m<30;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+ 		}
+                   if(year%4!=0)
+		{
+		for(var m=1;m<29;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+                    }
+
+    
+
+      case 'MAR':
+		for(var m=1;m<32;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+
+    case 'APR':
+		for(var m=1;m<=30;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+
+
+      
+     case 'MAY':
+		for(var m=1;m<32;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+    case 'JUN':
+		for(var m=1;m<=30;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+
+     case 'JUL':
+		for(var m=1;m<32;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+	
+     case 'AUG':
+		for(var m=1;m<32;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+     case 'SEP':
+		for(var m=1;m<31;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+     case 'OCT':
+		for(var m=1;m<32;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+     case 'NOV':
+		for(var m=1;m<31;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+     case 'DEC':
+		for(var m=1;m<32;m++)
+		{
+		
+		document.f.day.options[m] =new Option(m);
+		
+		}break;
+   
+	
+   }
+
+if(document.f.day.options[0])
+{
+alert("please select date of your DOB");
+return false;
+}
+
+}
+
+
+function getStates(val){
+//alert(val);
+switch(val)
+{
+	case 'India':
+	document.f.state.options[0] =new Option('select state');
+	document.f.state.options[1] =new Option('AP');
+	document.f.state.options[2] =new Option('Delhi');
+	document.f.state.options[3] =new Option('MP');
+	break;
+	case 'U.S.A':
+	document.f.state.options[0] =new Option('select state');
+	document.f.state.options[1] =new Option('AA');
+	document.f.state.options[2] =new Option('BB');
+	document.f.state.options[3] =new Option('CC');
+	break;
+	case 'Australia':
+	document.f.state.options[0] =new Option('select state');
+	document.f.state.options[1] =new Option('GG');
+	document.f.state.options[2] =new Option('HH');
+	document.f.state.options[3] =new Option('JJ');
+	
+}
+if(document.f.state.options[0])
+{
+alert("please select your state");
+}
+}
+
+
+
+
+function personalDetails()
+{
+//first name validation
+	var fname=document.getElementById('fname').value;
+
+
+	         if(fname=="" || fname==null)  
+		{
+			   
+		 var string=("Please check! First Name must be not null,not Empty ");
+		 document.getElementById('alert').innerHTML=string;
+		 document.f.fname.focus();
+		 return false;
+		}
+
+		if(fname.length>8 || fname.length<6 )
+		{
+		   
+		 var string=("Please check! Character must min 6 - 8 only ");
+		 document.getElementById('alert').innerHTML=string;
+		 document.f.fname.focus();
+		 return false;
+
+		}
+		var re = /^[A-Za-z]+$/;
+		if(!re.test(fname))
+		{
+		alert("Please check!first name:numbers not alloewd");
+		document.f.fname.focus();
+		var string=("Please check! numbers not alloewd ");
+		document.getElementById('alert').innerHTML=string;
+		return false;
+		}
+
+//last name validations
+	var lname=document.getElementById('lname').value;
+
+		if(lname=="" || lname==null )
+		{
+
+		var string="Please check! Last Name must be not null,not Empty";
+		document.getElementById('alert').innerHTML=string;
+		document.f.lname.focus();
+		return false;
+		}
+
+		if(lname.length>8 || lname.length<6 )
+		 {
+		   
+		 var string=("Please check! Character must min 6 - 8 only ");
+		 document.getElementById('alert').innerHTML=string;
+		 document.f.lname.focus();
+		 return false;
+
+		}
+
+		var re = /^[A-Za-z]+$/;
+		if(!re.test(lname))
+		{
+		alert("Please check!last name:numbers not alloewd");
+		document.f.lname.focus();
+		var string=("Please check! numbers not alloewd ");
+		document.getElementById('alert').innerHTML=string;
+		return false;
+		}
+		//dob validation
+		var yr=document.getElementById('year').value;
+		if(yr=="YEAR")
+		{
+		alert("Plese select year of your DOB");
+		return false;
+		}
+		var mo=document.getElementById('month').value;
+		if(mo=="MONTH")
+		{
+		alert("Please select Month of your DOB");
+		return false;
+		}
+		var dy=document.getElementById('day').value;
+		if(dy=="DAY")
+		{
+		alert("Please select Day of your DOB");
+		return false;
+		}
+
+//Email Validations
+		var x=document.getElementById('email').value;
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+	  	  {
+	   	   var string="Please Enter a valid E-mail id";
+		   document.getElementById('alert').innerHTML=string;
+		    document.f.email.focus();
+		   return false;
+	  	  }
+
+//gender validation
+	if(document.f.gender[0].checked != true && document.f.gender[1].checked != true)
+		{
+			 var string="Please Enter Gender";
+		           document.getElementById('alert').innerHTML=string;
+			    document.f.gender[0].focus();
+			 return false;
+	         
+		}
+		if(document.f.gender[0].checked==true)
+		{
+	 	//alert(document.f.gender[0].value);
+	      
+		    
+	   	}
+		if(document.f.gender[1].checked==true)
+		{	
+	       	//alert(document.f.gender[1].value);
+		 
+	       	}
+	       
+            
+        
+
+//check box validations
+	    if(document.f.ints[0].checked!=true && document.f.ints[1].checked!=true && document.f.ints[2].checked!=true && document.f.ints[3].checked!=true)
+		{
+		var string="Please check that you are not selected any option in the Interests";
+		document.getElementById('alert').innerHTML=string;
+		 document.f.ints[0].focus();
+		 return false;
+		}
+
+		if(document.f.ints[0].checked==true)
+		{
+		//alert(document.f.ints[0].value); 
+	
+		}
+	 	
+		if(document.f.ints[1].checked==true)
+		{
+		//alert(document.f.ints[1].value);
+		}
+
+		if(document.f.ints[2].checked==true)
+		{
+		//alert(document.f.ints[2].value);
+		}
+
+		if(document.f.ints[3].checked==true)
+		{
+		//alert(document.f.ints[3].value);
+		}
+
+//country
+	var cnty=document.getElementById('country').value;
+
+	if(cnty=="select-country")
+	{
+	alert("please select your country");
+	return false;
+	}
+
+
+
+
+
+
+//address valiations
+	var address=document.getElementById('disp').value;
+          if(address=="")
+	{
+	alert("Please check ! you left address field empty");
+	document.f.disp.focus();
+	return false;
+	}
+	
+          var myrep=address.replace("<","");
+	var myrep2=myrep.replace(">","");
+          
+          if(address!=myrep2)
+	{
+	alert("Please check! html tags appeared.No html tags allowed");
+	return false;
+	}
+
+
+
+//website validations
+	var url=document.getElementById('web').value;
+	var str=url.substring(0,11);
+	var test="http://www.";
+	if(str!=test)
+	{
+	var string="Please Enter valid url";
+	document.getElementById('alert').innerHTML=string;
+	document.f.web.focus();
+	return false;
+	}
+
+//upload image
+
+
+		 var extensions = new Array("jpg","jpeg","gif","png","bmp");
+		var image_file = document.f.img.value;
+		if(image_file=="")alert("Please include a file that must be jpg or png or gif");
+		var image_length = document.f.img.value.length;
+		var ext_pos = image_file.lastIndexOf('.') + 1;
+		var ext = image_file.substring(ext_pos, image_length);
+		var final_ext = ext.toLowerCase();
+		for (i = 0; i < extensions.length; i++)
+		{
+			if(extensions[i] == final_ext)
+			{
+				return true;
+			}
+		}
+		if (final_ext!="jpg" || final_ext!="jpeg" || final_ext!="png")
+		{
+			var string="Please check!The file must be a JPG,JPEG or PNG.";
+			document.getElementById('alert').innerHTML=string;
+			return false;
+		}
+
+   return false;
+     
+}
+</script>
+</head>
+
+<body id="body">
+<form name="f" id="f" onsubmit="return personalDetails();">
+<center><p id="caption">Error message</p>
+<div class="div1">
+<span id="alert">Errors Will display here</span>
+</div>
+<br/>
+<p id="caption">Personal Information</p>
+<table class="table1">
+
+<tr>
+<td class="td2">First Name:</td>
+<td class="td2"><input type="text" name="firstname" id="fname"></td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Last Name:</td>
+<td class="td2"><input type="text" name="lastname" id="lname"></td>
+<td class="td2"><input type="text" name="lastname2" id="lname2" style="border: 0px solid white;"></td>
+</tr>
+
+<tr>
+<td class="td2">Date of Birth:</td>
+<td class="td2">
+
+<select name="year" id="year">
+<option value="YEAR">YEAR</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+</select>
+
+<select name="month" id="month" onchange="getDates(this.value); ">
+<option value="MONTH">MONTH</option>
+<option value="JAN">JAN</option>
+<option value="FEB">FEB</option>
+<option value="MAR">MAR</option>
+<option value="APR">APR</option>
+<option value="MAY">MAY</option>
+<option value="JUN">JUN</option>
+<option value="JUL">JUL</option>
+<option value="AUG">AUG</option>
+<option value="SEP">SEP</option>
+<option value="OCT">OCT</option>
+<option value="NOV">NOV</option>
+<option value="DEC">DEC</option>
+
+</select>
+
+<select name="day" id="day">
+</select>
+</td>
+<td class="td2">&nbsp;</td>
+</tr>
+
+<tr>
+<td class="td2">Email :</td>
+<td class="td2"><input type="text" name="email" id="email"></td>
+<td class="td2"><input type="text" name="mail" id="mail" style="border: 0px solid white;"></td>
+</tr>
+
+<tr>
+<td class="td2">Gender :</td>
+<td class="td2"><input type="radio" name="gender" value="male"/>Male &nbsp;&nbsp;
+<input type="radio" name="gender" value="female" />Female</td>
+<td class="td2"><input type="text" name="gen" id="gen" style="border: 0px solid white;"></td>
+</tr>
+
+
+<tr>
+<td class="td2">Interests :</td>
+<td class="td2">
+<input type="checkbox" name="ints" value="crirket" />crirket&nbsp;
+<input type="checkbox" name="ints" value="chess" />Chess&nbsp;
+<input type="checkbox" name="ints" value="basketball" />paint&nbsp;
+<input type="checkbox" name="ints" value="stamps" />Stamps&nbsp;
+</td>
+<td class="td2"><input type="text" name="cbox" id="xbox" style="border: 0px solid white;"></td>
+</tr>
+
+<tr>
+<td class="td2">Select Your Country :</td>
+<td class="td2">
+<select name="country" id="country" onchange="getStates(this.value); ">
+<option value="select-country">select-country</option>
+<option value="India">India</option>
+<option value="U.S.A">U.S.A</option>
+<option value="Australia">Australia</option>
+</select>
+
+</td>
+<td class="td2"><input type="text" name="selc" id="selc" style="border: 0px solid white;"></td>
+</tr>
+
+<tr>
+<td class="td2">Select Your State :</td>
+<td class="td2">
+<select name="state" id="state">
+</select>
+</td>
+<td class="td2"><input type="text" name="sels" id="sels" style="border: 0px solid white;"></td>
+</tr>
+
+<tr>
+<td class="td2">Address :</td>
+<td class="td2">
+<textarea rows="10" cols="50" id="disp" value="address">
+</textarea>
+</td>
+<td class="td2"><input type="text" name="add" id="add" style="border: 0px solid white;"></td>
+</tr>
+
+<tr>
+<td class="td2">Website:</td>
+<td class="td2"><input type="text" name="website" id="web"></td>
+<td class="td2"><input type="text" name="site" id="site" style="border: 0px solid white;"></td>
+</tr>
+
+<tr>
+<td class="td2">UpLoad image :</td>
+<td class="td2"><input type="file" name="img" id="img"></td>
+<td class="td2"><input type="text" name="bro" id="bro" style="border: 0px solid white;"></td>
+</tr>
+</table>
+
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<h1>Listing cbook</h1>
+
+<table>
+  <tr>
+    <th>commenter</th>
+    <th>body</th>
+    <th>email</th>
+    <th>website</th>
+    <th>mobile</th>
+    <th>area</th>
+    <th>pincode</th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cbooks.each do |cbook| %>
+  <tr>
+    <td><%= cbook.commenter %></td>
+    <td><%= cbook.body %></td>
+    <td><%= cbook.email %></td>
+     <td><%= cbook.website %></td>
+    <td><%= cbook.mobile %></td>
+    <td><%= cbook.area %></td>
+    <td><%= cbook.pincode %></td>
+
+
+    <td><%= link_to 'Show', cbook %></td>
+    <td><%= link_to 'Edit', edit_cbook_path(cbook) %></td>
+    <td><%= link_to 'Destroy', cbook, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cbook', new_cbook_path %>

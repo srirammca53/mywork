@@ -1,0 +1,124 @@
+<html>
+ <title>cookies</title>
+ <head>
+   <script type="text/javascript">
+	function validation()
+	 {
+	 var user=document.f.user.value;
+ 	 var pwd=document.f.pwd.value;
+	 var time=document.f.time.value;
+ 	 if(user=="" || user==null)
+	      {
+		  alert("please Enter your user name");
+		  document.f.user.focus();
+		  return false;
+	      }
+	if(pwd=="" || pwd==null)
+	      {
+		  alert("please Enter your password");
+		  document.f.pwd.focus();
+		  return false;
+	      }
+	if(time=="" || time==null || isNaN(time)) 
+	     {
+		  alert("please Enter time for cookies in Digits");
+		  document.f.time.focus();
+		  return false;
+               }
+	
+		
+	}
+
+`	
+	function login()
+	  {
+    	   validation();
+ 	   
+	   }
+
+
+	
+   </script>
+ </head>
+    
+      <body bgcolor="green">
+	<hr >
+	<center>
+	<img src="Gmail.png" align="center" width="400px" height="150px">
+	</center>
+	<hr />
+ 	<br>
+	<marquee bgcolor="black" behaviour="alternate">
+	<font color="yellow">Please enter Login details</font>
+	</marquee>
+	<br>
+	<br>
+	<form name="f" id="f" >
+	<table width="400px" height="200px" cellspacing="0px" cellpadding="2px" align="center" border="0px" bgcolor="pink">
+	<tr>
+	<td width="280px">Enter User Name</td>
+	<td width="120px"><input type="text" name="user" id="user"></td>
+	</tr>
+	<tr>
+	<td width="280px">Enter Your Password</td>
+	<td width="120px"><input type="password" name="pwd" id="pwd"></td>
+	</tr>
+	<tr>
+	<td width="280px" align="right"><input type="checkbox" name="rem" id="rem"></td>
+	<td width="120px">Remember me</td>
+	</tr>
+	<tr>
+	<td width="280px">Enter time to cookies</td>
+	<td width="120px"><input type="text" name="time" id="time"></td>
+	</tr>
+	<tr>
+	<td width="280px" align="right"><input type="submit"   value="Sign in" onclick="login();" ></td>
+	<td width="120px">&nbsp;</td>
+	</tr>
+	</table>
+	</br>
+	
+	<center>
+	<input type="submit" value="delete cookies" onclick="deleteCookie();">
+	</center>
+	</form>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

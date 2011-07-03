@@ -1,0 +1,45 @@
+
+<%= form_for(@cbook) do |cbook_form| %>
+  <% if @cbook.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@cbook.errors.count, "error") %> prohibited this comment from being saved:</h2>
+    <ul>
+    <% @cbook.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  
+  <div class="field">
+    <%= cbook_form.label :commenter %><br />
+    <%= cbook_form.text_field :commenter %>
+  </div>
+  <div class="field">
+    <%= cbook_form.label :body %><br />
+    <%= cbook_form.text_area :body %>
+  </div>
+  <div class="field">
+    <%= cbook_form.label :email %><br />
+    <%= cbook_form.text_field :email %>
+  </div>
+<div class="field">
+    <%= cbook_form.label :website %><br />
+    <%= cbook_form.text_field :website %>
+  </div>
+<div class="field">
+    <%= cbook_form.label :mobile %><br />
+    <%= cbook_form.text_field :mobile %>
+  </div>
+<div class="field">
+    <%= cbook_form.label :area %><br />
+    <%= cbook_form.text_field :area %>
+  </div>
+<div class="field">
+    <%= cbook_form.label :pincode %><br />
+    <%= cbook_form.text_field :pincode %>
+  </div>
+  <div class="actions">
+    <%= cbook_form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+
+1)* Take two text fields,one for enter the name and another for display the enterd name in uppercase.
+  * Take another two text fields,One for enter the text and second one for display the given test reverse and disply the character count.
+
+2)* Take text box,select box,radio button,check box.At the end you have to display whole the  selected details in seperate textarea seperated with commas .Dont navigate to next page,You have to do this with in the same page.
+
+3)* Display the current time and date using date object in javascript.
+  * Take three text boxes,two for enter the two dates another one for display the number of the days between those given dates.
+
+4)* Perform the palindrom, Here you have to take the string from prompt box.And need to display the messa

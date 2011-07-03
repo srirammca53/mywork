@@ -1,0 +1,109 @@
+<html>
+<title>form</title>
+<head>
+<script type="text/javascript">
+	function details()
+{
+var user=document.f.username.value;
+
+if(user=="" || user==null)  
+	{   
+	 alert("please enter your name");
+	 document.f.user.focus();
+           return false;
+	}
+
+	if(user.length>6 || user.length<3 )
+	{
+	   
+	 alert("please enter min3 characters and max 6 characters");
+	 document.f.fname.focus();
+           return false;
+	}
+var email=document.f.email.value;
+
+
+	var atpos=email.indexOf("@");
+	var dotpos=email.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+  	  {
+   	  alert("Please Enter a valid E-mail id");
+             document.f.email.focus();
+             return false;
+  	  }
+var zip=document.f.zip.value;
+
+if(zip.length>6 || zip.length<6 || isNaN(zip))
+	{
+	   
+	 alert("please enter zipcode only 6 digits");
+	 document.f.zip.focus();
+           return false;
+	}
+
+var age=document.f.age.value;
+
+if(age.length>3)
+	{
+	   
+	 alert("please enter age only 3 digits max");
+	 document.f.age.focus();
+           return false;
+	}
+if(isNaN(age))
+	{
+	   
+	 alert("please enter age only in digits only");
+	 document.f.age.focus();
+           return false;
+	}
+if(document.f.ints[0].checked!=true && document.f.ints[1].checked!=true && document.f.ints[2].checked!=true && document.f.ints[3].checked!=true)
+	{
+	alert("Please check atleast  any one option in the Hobbies");
+         	document.f.ints[0].focus();
+	return false;
+	}
+
+	
+}
+</script>
+</head>
+
+<body bgcolor="black">
+<form name="f" id="f" onsubmit="return details();">
+<center>
+<h2> <font color="white">User details </font></h2>
+<table border="1px" width="500px" height="400px" cellspacing="2px" cellpadding="10px" bgcolor="green">
+<tr>
+<td>Enter your name:</td>
+<td><input type="text" name="username" id="username"></td>
+</tr>
+<tr>
+<td>Enter your mailid:</td>
+<td><input type="text" name="email" id="email"></td>
+</tr>
+<tr>
+<td>Enter your city zipcode:</td>
+<td><input type="text" name="zip" id="zip"></td>
+</tr>
+<tr>
+<td>Enter your age:</td>
+<td><input type="text" name="age" id="age"></td>
+</tr>
+<tr>
+<td>select your Hobbies:</td>
+<td><input type="checkbox" name="ints" value="paint" />paint
+<input type="checkbox" name="ints" value="crirket" />crirket&nbsp;
+<input type="checkbox" name="ints" value="chess" />Chess&nbsp;
+<input type="checkbox" name="ints" value="basketball" />paint&nbsp;
+<input type="checkbox" name="ints" value="stamps" />Stamps&nbsp;
+</td>
+</tr>
+</table>
+<br>
+<input type="submit" value="ok">
+</form>
+</center>
+
+</body>
+</html>

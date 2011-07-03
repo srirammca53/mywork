@@ -1,0 +1,22 @@
+First Name:  should be alphabet, not empty, min 6 and max 8 chars 
+
+Last name  : should be alphabet, not empty, min 6 and max 8 chars
+
+DOB:  should be mm / dd / yyyy format, month sould be 1 to 12 and date should be come based on month and year must 
+be four digits(only numerics). should not allow the special characters and spaces.
+
+Email: keep the email validation manually, Do not use any expressions.
+
+Gender: check male/female,
+
+Interests: take any four with check boxes,
+
+Select Country: It is an array of countries,
+
+Select State: It is an array of some predefined states, And it is based on the country selection
+
+Address: It should not allow the urls, html tags, spaces,
+
+website: It should valid url,
+
+Upload Image: It should allow only jpg, jpeg, png

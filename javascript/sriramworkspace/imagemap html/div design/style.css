@@ -1,0 +1,244 @@
+body {
+        background-image:url('file:///home/nyros/Documents/sriram%20workspace/25-04-2011/div%20design/images/world.jpg');
+        background-repeat:no-repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+#head {
+        background-color:transparent;
+	height: 800px;
+	width: 1000px;
+	float: center;
+      
+}
+
+.div1 {
+        background-color:purple;
+	height: 60px;
+	width: 985px;
+	float: center;
+        
+}
+
+h3{
+   text-decoration: blink;
+    color: white;
+    font-size:24pt;
+    text-align:center;
+   }
+
+p
+{
+    text-decoration: none;
+    color: orange;
+    font-size:12pt;
+    text-align:right;
+}
+
+.menu{
+        background-color:green;
+text-decoration:none;
+text-align:center;
+font-size:12pt;
+color:white;
+border:1px solid black;
+	height: 40px;
+	width: 985px;
+	float: left;
+        
+}
+ul
+{
+list-style-position:inside;
+list-style-type:none;
+
+}
+
+li
+{
+width:230px;
+list-style-type:none;
+text-color:white;
+font-size:14pt;
+float:left;
+text-align:top;
+}
+
+
+h5
+{
+text-decoration:none;
+text-color:black;
+font-size:10pt;
+text-align:center;
+
+}
+
+.navleft
+{
+background-color:transparent;
+text-decoration:none;
+text-align:left;
+font-size:12pt solid;
+text-color:yellow;
+border:0px solid white;
+	height: 400px;
+	width: 230px;
+float:left;
+	
+}
+.navrdown1
+{
+background-color:transparent;
+text-decoration:none;
+text-align:center;
+font-size:12pt solid;
+color:white;
+margin:2px;
+border:0px solid black;
+	height: 200px;
+	width: 250px;
+float:left;
+}
+.navrdown2
+{
+background-color:transparent;
+text-decoration:none;
+text-align:center;
+font-size:12pt solid;
+color:white;
+border:0px solid black;
+	height: 200px;
+	width: 245px;
+float:left;
+}
+.navrdown3
+{
+background-color:transparent;
+text-decoration:none;
+text-align:center;
+font-size:12pt solid;
+color:white;
+border:0px solid black;
+	height: 200px;
+	width: 255px;
+float:left;
+}
+
+.navright
+{
+background-color:transparent;
+text-decoration:none;
+text-align:right;
+color:white;
+border:0px solid black;
+	height: 200px;
+	width: 755px;
+float:left;
+}
+
+.inimg
+{
+background-color:transparent;
+border:0px solid black;
+height:150px;
+
+}
+.inimg img{float:left;}
+
+.down1
+{
+background-color:green;
+text-decoration:none;
+text-align:center;
+font-size:12pt solid;
+color:white;
+border:1px solid black;
+	height: 40px;
+	width: 230px;
+float:left;
+}
+
+.down2
+{
+background-color:green;
+text-decoration:none;
+text-align:center;
+font-size:12pt solid;
+color:white;
+border:1px solid black;
+	height: 40px;
+	width: 250px;
+float:left;
+}
+
+.down3
+{
+background-color:green;
+text-decoration:none;
+text-align:center;
+font-size:12pt solid;
+color:white;
+border:1px solid black;
+	height: 40px;
+	width: 245px;
+float:left;
+}
+
+.down4
+{
+background-color:green;
+text-decoration:none;
+text-align:center;
+font-size:12pt solid;
+color:white;
+border:1px solid black;
+	height: 40px;
+	width: 255px;
+float:left;
+}
+
+#footer
+{
+background-color:purple;
+text-decoration:none;
+text-align:bottom;
+font-size:12pt solid;
+color:white;
+border:1px solid black;
+	height: 80px;
+	width: 988px;
+}
+.clear
+{
+clear:both;
+}
+
+a {
+text-decoration:none;
+color:white;
+font-size:14pt;
+text-align:right;
+
+}
+.a1
+{
+text-decoration:none;
+color:red;
+font-size:14pt;
+text-align:right;
+}
+.a2
+{
+text-decoration:none;
+
+color:yellow;
+font-size:14pt;
+text-align:right;
+}
+
+
+

@@ -1,0 +1,152 @@
+<html>
+<title>
+Final task
+</title>
+<head>
+<script type="text/javascript">
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+
+
+function time()
+{
+
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+
+m=checkTime(m);
+s=checkTime(s);
+
+document.getElementById('time').innerHTML=h+":"+m+":"+s;
+}
+
+function messages()
+{
+time();
+t=setTimeout('time()',500);
+
+
+var dailytask = 0;
+
+if(h=="08" && m=="00")
+{
+alert("good morning");
+}
+if (task!=null && task!="")
+{
+if (s=="09")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p1').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="10")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p2').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="11")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p3').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="12")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p4').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="13")
+  {
+  document.getElementById('p5').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="14")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p6').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="15")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p7').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="16")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p8').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+if (s=="17")
+  {
+  dailytask = setInterval ( "prompt()", 15000);
+  var task=prompt("Please enter your task","No task");
+  document.getElementById('p9').innerHTML=task;
+  clearInterval ( dailytask );
+  }
+}
+
+if(h=="18" && m=="00")
+{
+alert("good evening");
+}
+
+}
+
+</script>
+</head>
+<body bgcolor="purple" onload="messages();">
+<form name="f" id="f" >
+<center>
+<table width="750px" height="450px" border="2px" cellspacing="0px" cellpadding="2px">
+<caption><h3><font color="white">Task updates</font></h3></caption>
+<tr>
+<td width="150x" bgcolor="pink"><span id="p1">hi</span></td>
+<td width="150x" bgcolor="orange"><span id="p2">hi</span></td>
+<td width="150x" bgcolor="brown"><span id="p3">hi</span></td>
+</tr>
+<tr>
+<td width="150x" bgcolor="black"><span id="p4">hi</span></td>
+<td width="150x" bgcolor="white"><span id="p5">hi</span></td>
+<td width="150x" bgcolor="red"><span id="p6">hi</span></td>
+</tr>
+<tr>
+<td width="150x" bgcolor="aqua"><span id="p7">hi</span></td>
+<td width="150x" bgcolor="green"><span id="p8">hi</span></td>
+<td width="150x" bgcolor="gray"><span id="p9">hi</span></td>
+</tr>
+</table>
+</center>
+<br>
+<center>
+<table width="250px" height="50px" border="1px">
+<tr>
+<td bgcolor="yellow" width="60px">time:</td><td bgcolor="white"><span id="time"></span></td>
+</tr>
+</table>
+<input type="button" value="time" >
+</form>
+</body>
+</html>
+

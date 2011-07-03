@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  commenter: MyString
+  body: MyText
+  email: MyString
+  website: MyString
+  mobile: MyString
+  area: MyString
+  pincode: 1
+
+two:
+  commenter: MyString
+  body: MyText
+  email: MyString
+  website: MyString
+  mobile: MyString
+  area: MyString
+  pincode: 1

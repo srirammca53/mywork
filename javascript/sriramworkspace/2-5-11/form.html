@@ -1,0 +1,81 @@
+<html>
+<title>form</title>
+<head>
+
+
+</head>
+<body>
+
+<center>
+<script type="text/javascript">
+
+function details()
+{
+var fname=document.getElementById('string').value;
+document.write(fname);
+
+}
+
+
+
+/*
+
+var country=document.getElementById('country').value
+alert("name:"+country)
+}
+*/
+function submit()
+{
+details();
+radioCheck();
+}
+
+
+
+</script>
+<form name ="detail" id="form1">
+<table border="0px">
+<tr>
+<td>
+Enter name:
+</td><td><input type="text" id="string"></td>
+<tr>
+<td>Gender</td>
+<td>
+<form name="gend">
+<input type="radio" name="gender" value="male" id="male"/> Male<br />
+<input type="radio" name="gender" value="female" id="male"/> Female
+
+</td>
+</tr>
+<tr>
+<td>
+skills
+</td>
+<td>
+<input type="checkbox" name="skills" value="C" id="skill1" /> C<br />
+<input type="checkbox" name="skills" value="C++" id="skill2" /> C++<br/>
+<input type="checkbox" name="skills" value="Java" id="skill3" /> Java<br />
+<input type="checkbox" name="skills" value="net" id="skill4" /> .net<br/>
+</td>
+</tr> 
+<tr>
+<td>select country</td>
+<td><select name="country">
+<option>India</option>
+<option>Srilanka</option>
+<option>America</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Your details</td><td><textarea rows="4" cols="20" id="disp" value="disp">
+</textarea></td>
+</tr> 
+</table>
+<input type="button" value="display" onclick="submit()">
+</form>
+</center>
+</body>
+</html>
+

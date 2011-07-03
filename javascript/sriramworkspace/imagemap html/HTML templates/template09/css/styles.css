@@ -1,0 +1,320 @@
+body {
+	margin-bottom: 0px;
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #525252;
+}
+a:link {
+	color: #FFFFFF;
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+a:hover {
+	color: #000000;
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	border: thin none #FFFFFF;
+	text-decoration: underline;
+}
+a:visited {
+	color: #FFFFFF;
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: underline;
+
+}
+td, textarea, input, select {
+	font-family: Tahoma;
+	font-size: 10px;
+	color: 9E9E9E;
+	font-weight: normal;
+}
+.tableDetail {
+	font-size: 10px;
+	font-family: Verdana;
+	color: #49394E;
+}
+.text1 {
+	font-family: tahoma;
+	font-size: 10px;
+	color: 8EA11F;
+	font-weight: bold;
+}
+.text2 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: C4700A;
+}
+.text3 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.frame {
+	border: 1px solid #FBAD01;
+}
+.text4 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 293B38;
+}
+.designed_by {
+	font-family: Arial;
+	font-size: 8.5px;
+	font-weight: lighter;
+	color: #000000;
+}
+.text5 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: F96825;
+}
+.text6 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 944F23;
+}
+.text7 {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+a.l:link {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 8EA11F;
+	text-decoration: underline;
+}
+a.l:hover {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #F9AC01;
+	text-decoration: underline;
+}
+a.l:visited {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 8EA11F;
+	text-decoration: underline;
+}
+a.or:link {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: C4700A;
+	text-decoration: underline;
+}
+a.or:hover {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #A3B248;
+	text-decoration: underline;
+}
+a.or:visited {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: C4700A;
+	text-decoration: underline;
+}
+a.bl:link {
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 004C90;
+	text-decoration: underline;
+}
+a.bl:hover {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #4E4E4E;
+	text-decoration: underline;
+}
+a.bl:visited {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 004C90;
+	text-decoration: underline;
+}
+.inputstyle {
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #CE7B08;
+	background-color: F2D287;
+	border: 1px solid #FFFFFF;
+}
+a.ca:link {
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: F96825;
+	text-decoration: underline;
+}
+a.ca:hover {
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #4E4E4E;
+	text-decoration: underline;
+}
+a.ca:visited {
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: F96825;
+	text-decoration: underline;
+}
+a.ma:link {
+
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 944F23;
+	text-decoration: underline;
+}
+a.ma:hover {
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #4E4E4E;
+	text-decoration: underline;
+}
+a.ma:visited {
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: 944F23;
+	text-decoration: underline;
+}
+a.sa:link {
+
+
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 594B13;
+	text-decoration: underline;
+}
+a.sa:hover {
+
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: #4E4E4E;
+	text-decoration: underline;
+}
+a.sa:visited {
+
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 594B13;
+	text-decoration: underline;
+}
+a.na:link {
+
+
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+a.na:hover {
+
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: underline;
+}
+a.na:visited {
+
+
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.text8 {
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 94AEC5;
+}
+.text9 {
+
+
+	font-family: tahoma;
+	font-size: 10px;
+	font-weight: normal;
+	color: 4E4E4E;
+}

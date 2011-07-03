@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>
+MyWebPage
+</title>
+<body background="file:///home/nyros/Documents/Mytask%2020-04-2011/mybg.jpg">
+<center>
+<p><h1><font color=#FF7F50>MY WORLD</font>
+<img src="file:///home/nyros/Documents/Mytask%2020-04-2011/Myworld.jpg" alt="world" align="middle" width="100" height="100"/>
+</p>
+</center>
+
+<!--<script type="text/javascript">
+tday  =new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+d = new Date();
+nday   = d.getDay();
+nmonth = d.getMonth();
+ndate  = d.getDate();
+nyear = d.getYear();
+nhour  = d.getHours();
+nmin   = d.getMinutes();
+if(nyear<1000) nyear=nyear+1900;
+
+     if(nhour ==  0) {ap = " AM";nhour = 12;} 
+else if(nhour <= 11) {ap = " AM";} 
+else if(nhour == 12) {ap = " PM";} 
+else if(nhour >= 13) {ap = " PM";nhour -= 12;}
+
+if(nmin <= 9) {nmin = "0" +nmin;}
+
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+setTimeout("GetClock()", 1000);
+}
+window.onload=GetClock;
+</script>
+<div id="clockbox"></div>-->
+
+
+
+<marquee bgcolor="black" behaviour="alternate">
+<font color="yellow">MCA results declared visit&nbsp;<a href="http://www.andhrauniversity.info/exams/results.html"><font color="white"><b><i>click here</i></b></font></a>.
+</marquee>
+<hr/>
+<table border="2" cellpadding="20" cellSpacing="0" >
+<tr border="0" bgcolor="brown">
+<td  width="200" height="80"><a href="http://search.rediff.com/imgsrch/default.php?MT=india"><font color="white">Images<font></td>
+<td width="200" height="80"><a href="http://books.google.com/"><font color="white">Books<font></td>
+<td width="200" height="80"><a href="http://en.wikipedia.org/wiki/Resource_%28Web%29"><font color="white">Web Resource<font></td>
+<td width="200" height="80"><a href="http://www.magatopia.com/"><font color="white">Magazines<font></td>
+<td width="200" height="80"><a href="http://www.sify.com/sports/"><font color="white">Sports<font></td>
+</tr>
+<tr height="300">
+
+    <td rowspan="2" bgcolor="gray" valign="top" ><a href="http://www.kirjasto.sci.fi/indeksi.htm"><b><font color="Yellow">Authors</b></font></a><br><br>
+<a href="http://www.indiabix.com/aptitude/questions-and-answers/"><b><font color="Yellow">Aptitude practise</b></font></a><br><br><a href="http://www.indiabix.com/online-test/categories/"><b><font color="Yellow">Online test practise</b></font></td><br>
+    <td colspan="4"><p>
+<img src="file:///home/nyros/Documents/Mytask%2020-04-2011/Wikipedia.png" align="left" width="150" height="160"><em><font color="pink">Wikipedia is one of the free encylopedia and started in the year 1993.Wikipedia is one of the best resource from web and you may get the basic things of each and every topic world wide and the information is available in different languages.So, if you want to know about any information that need to you can search through this website in the language that you want.It also having data ofPersons,architecture,sports,records,milestones,entertainment,politics,epics,awards and etc.. So,If you want to start seaching what you need just
+
+ </font></em><a href="http://www.wikipedia.org/"><font color="White"><i>click here.... </i></font></a></p></td>
+      </tr>
+  <tr>
+    <td height="120"><a href="http://www.nasa.gov/"><img src="file:///home/nyros/Documents/Mytask%2020-04-2011/nasa.jpg"width="180" height="180"></td>
+<td height="120"><a href="http://www.presentjobs.com/"><img src="file:///home/nyros/Documents/Mytask%2020-04-2011/jobs.jpg" width="180" height="180"></td>
+<td height="120"><a href="http://maps.google.co.in/"><img src="file:///home/nyros/Documents/Mytask%2020-04-2011/map.jpg" width="180" height="180"></td>
+
+<td height="120"><a href="http://www.w3schools.com/"><img src="file:///home/nyros/Documents/Mytask%2020-04-2011/w3schools.jpg" width="180" height="180"></td>
+  </tr>
+<tr>
+<td height="80" bgcolor="brown"><a href="file:///home/nyros/Documents/Mytask%2020-04-2011/aboutus.html"><font color="white">about us</td>
+<td height="80" bgcolor="brown"><a href="file:///home/nyros/Documents/Mytask%2020-04-2011/contactus.html"><font color="white">Contact us</td>
+<td height="80" bgcolor="brown"><a href="file:///home/nyros/Documents/Mytask%2020-04-2011/Customer.html"><font color="white">Customer care</td>
+<td height="80" bgcolor="brown"><a href="file:///home/nyros/Documents/Mytask%2020-04-2011/help.html"><font color="white">Help</td>
+<td height="80" bgcolor="brown"><a href="file:///home/nyros/Documents/Mytask%2020-04-2011/relatedlinks.html"><font color="white">related Links</td>
+</tr>
+<td rowspan="2">
+</td>
+</tr>
+</table>
+<center><font color="white">Copy right &nbsp;&copy &nbsp;&nbsp;2007-2011: Sree Creations.</font></center>
+</body>
+</head>
+</html>

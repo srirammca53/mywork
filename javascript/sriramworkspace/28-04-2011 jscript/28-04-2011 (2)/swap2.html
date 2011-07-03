@@ -1,0 +1,44 @@
+<html>
+<title>swap without temp</title>
+<head>
+<script type="text/javascript">
+function swap2()
+{
+var a=parseInt(document.getElementById('a').value);
+var b=parseInt(document.getElementById('b').value);
+if(a > 31 && (a < 48 || a > 57))
+{
+alert("field must not be empty ");
+}
+if(b > 31 && (b < 48 || b > 57))
+{
+alert("field must not be empty ");
+}
+alert("before swaping: a="+a+'\n'+"b="+b);
+a = a+b;
+b=a-b;
+a=a-b;
+alert("after swaping: a="+a+'\n'+"b="+b);
+
+}
+</script>
+
+
+<body>
+<form>
+<center>
+<table>
+<tr>
+<td>Enter a:</td>
+<td><input type="text" id="a"></td>
+</tr>
+<tr>
+<td>Enter b:</td>
+<td><input type="text" id="b"></td>
+</tr>
+</table>
+<input type="button" value="check" onclick="swap2()">
+</center>
+</form>
+</body>
+<html>

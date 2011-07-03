@@ -1,0 +1,82 @@
+<html>
+<title>
+Final task
+</title>
+<head>
+<script type="text/javascript">
+
+function checkTime(i)
+{
+	if (i<10)
+	 {
+  	i="0" + i;
+ 	 }
+return i;
+}
+
+function time()
+{
+
+	var today=new Date();
+	var h=today.getHours();
+	var m=today.getMinutes();
+	var s=today.getSeconds();
+
+	m=checkTime(m);
+	s=checkTime(s);
+	t=h+":"+m+":"+s;
+	document.getElementById('time').innerHTML=t;
+	t=setTimeout('time()',500);
+
+}
+function prompt()
+{
+var task=prompt("enter your task","No task");
+alert(task);
+}
+function messages()
+{
+time();
+var display=setInterval('prompt()',10000);
+if(s>"10" && s<"50")
+{
+document.getElementById('p1').innerHTML=task;
+}
+}
+
+</script>
+</head>
+<body bgcolor="purple" onload="messages();">
+<form name="f" id="f" >
+<center>
+<table width="750px" height="450px" border="2px" cellspacing="0px" cellpadding="2px">
+<caption><h3><font color="white">Task updates</font></h3></caption>
+<tr>
+<td width="150x" bgcolor="white"><span id="tim">hi</span></td>
+<td width="150x" bgcolor="white"><span id="p2">hi</span></td>
+<td width="150x" bgcolor="white"><span id="p3">hi</span></td>
+</tr>
+<tr>
+<td width="150x" bgcolor="white"><span id="p4">hi</span></td>
+<td width="150x" bgcolor="white"><span id="p5">hi</span></td>
+<td width="150x" bgcolor="white"><span id="p6">hi</span></td>
+</tr>
+<tr>
+<td width="150x" bgcolor="white"><span id="p7">hi</span></td>
+<td width="150x" bgcolor="white"><span id="p8">hi</span></td>
+<td width="150x" bgcolor="white"><span id="p9">hi</span></td>
+</tr>
+</table>
+</center>
+<br>
+<center>
+<table width="250px" height="50px" border="1px">
+<tr>
+<td bgcolor="white" width="60px">time:</td><td bgcolor="white"><span id="time"></span></td>
+</tr>
+</table>
+<input type="button" value="time" >
+</form>
+</body>
+</html>
+

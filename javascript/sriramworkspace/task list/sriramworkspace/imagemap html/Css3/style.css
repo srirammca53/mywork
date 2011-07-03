@@ -1,0 +1,230 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}#main {
+	height: 550px;
+	width: 779px;
+	float: left;
+}
+.blueheader {
+	height: 10px;
+	width: 779px;
+	float: left;
+	background-color: #00AAD6;
+}
+.header {
+	height: 141px;
+	width: 779px;
+	float: left;
+	background-color: black;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+.maincontent {
+	height: 389px;
+	width: 779px;
+	float: left;
+}
+.maninavigation {
+	width: 136px;
+	float: left;
+	background-color: #FFFFFF;
+}
+.text {
+
+
+	height: 389px;
+	width: 440px;
+	float: left;
+	background-color: #E8E8E8;
+}
+.flashcontent {
+	height: 389px;
+	width: 198px;
+	float: left;
+	background-color: #FFFFFF;
+	padding: 4px;
+}
+.navlink1 a {
+	width: 131px;
+	float: left;
+	background-image: url(images/bluebutton.jpg);
+	background-repeat: no-repeat;
+	padding: 5px;
+	background-color: #FFFFFF;
+	background-position: center center;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #E8E8E8;
+	text-decoration: none;
+	height: 15px;
+}
+.navlink1 a:hover{
+	width: 131px;
+	float: left;
+	background-image: url(images/bluebutton2.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+	padding: 5px;
+	height: 15px;
+}
+.companyname {
+	float: right;
+	background-color: #E5E3E6;
+	padding: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 23px;
+	font-weight: bolder;
+	color: #00AAD6;
+	margin: 10px;
+	text-align: center;
+}
+.welcome {
+	float: none;
+	background-color: #E8E8E8;
+	padding: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #00AAD6;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #01A9D6;
+}
+.innertext {
+	float: left;
+	background-color: #E8E8E8;
+	padding: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #00AAD6;
+	margin: 5px;
+	text-align: left;
+	line-height: 18px;
+	background-position: center;
+}
+.familypicture {
+	height: 80px;
+	width: 136px;
+	float: left;
+	text-align: center;
+	background-position: center center;
+}
+.familypictureblank {
+	height: 30px;
+	width: 136px;
+	float: left;
+	text-align: center;
+	background-position: center center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	color: #01A9D6;
+	font-weight: bold;
+}
+.familypictureblank2 {
+
+
+	height: 20px;
+	width: 136px;
+	float: left;
+	text-align: center;
+	background-position: center center;
+}
+.description {
+	float: left;
+	background-color: #E8E8E8;
+	padding: 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #00AAD6;
+	margin: 10px;
+	text-align: center;
+	line-height: 18px;
+	background-position: center center;
+	width: 150px;
+}
+#footer {
+	float: left;
+	background-color: #01A9D6;
+	text-align: left;
+	height: 12px;
+	width: 769px;
+	padding-left: 10px;
+}
+
+.bluemain {
+	width: 50%;
+	float: right;
+}
+.navlink2 a {
+
+	width: 50px;
+	float: right;
+	background-repeat: no-repeat;
+	padding: 5px;
+	background-position: center center;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #E8E8E8;
+	text-decoration: none;
+	height: 15px;
+}
+.navlink2 a:hover {
+
+	width: 50px;
+	float: right;
+	color: #000000;
+	padding: 5px;
+	height: 15px;
+}
+.imageheader {
+	height: 141px;
+	width: 250px;
+	float: left;
+	background-color: #E8E8E8;
+}
+.imageheader2 {
+	height: 141px;
+	width: 250px;
+	float: left;
+	text-align: center;
+	background-position: center;
+}
+.link a{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+	}
+.link a:hover{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.link {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+.photogallery {
+
+
+
+
+	height: 389px;
+	width: 198px;
+	float: left;
+	background-color: #FFFFFF;
+}

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Name: MyString
+  DOB: 2011-06-20
+  Age: 1
+  Username: MyString
+  Password: MyText
+
+two:
+  Name: MyString
+  DOB: 2011-06-20
+  Age: 1
+  Username: MyString
+  Password: MyText

@@ -1,0 +1,34 @@
+<center>
+<font color="orange"><h3>SHOW DETAILS</h3></font>
+<hr/>
+<p id="notice"><%= notice %></p>
+
+<table border=2px>
+  <tr>
+<td bgcolor="white"><b>Name:</b></td>
+  <td bgcolor="white"><%= @post.Name %></td>
+
+
+<tr>
+  <td bgcolor="white"><b>Dob:</b></td>
+  <td bgcolor="white"><%= @post.DOB %></td>
+
+
+<tr>
+  <td bgcolor="white"><b>Age:</b></td>
+  <td bgcolor="white"><%= @post.Age %></td>
+</tr>
+
+<tr>
+  <td bgcolor="white"><b>Username:</b></td>
+  <td bgcolor="white"><%= @post.Username %></td>
+</tr>
+
+<tr>
+  <td bgcolor="white"><b>Password:</b></td>
+  <td bgcolor="white"><%= @post.Password %></td>
+</tr>
+</table>
+</center>
+<font color="yellow"><%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %></font>

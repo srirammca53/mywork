@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Emp name:</b>
+  <%= @office.emp_name %>
+</p>
+
+<p>
+  <b>Emp age:</b>
+  <%= @office.emp_age %>
+</p>
+
+<p>
+  <b>Emp salary:</b>
+  <%= @office.emp_salary %>
+</p>
+
+<p>
+  <b>Emp experience:</b>
+  <%= @office.emp_experience %>
+</p>
+
+
+<%= link_to 'Edit', edit_office_path(@office) %> |
+<%= link_to 'Back', offices_path %>

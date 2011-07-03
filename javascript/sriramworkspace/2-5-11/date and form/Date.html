@@ -1,0 +1,52 @@
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Date Diff</title>
+</head>
+
+<body>
+
+<input type="text" name="date1" id="date1" value="DD/MM/YYYY" />
+<input type="text" name="date2" id="date2" value="DD/MM/YYYY" onblur="calculate()" />
+<input type="text" name="date3" id="date3" value="" />Days
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function calculate()
+{
+    var date1 = document.getElementById("date1").value;
+    var date2 = document.getElementById("date2").value;
+   
+    var date1 = date1.split("/");
+    var year = date1[2];
+    var month = date1[1];
+    var day =  date1[0]; 
+    date1=new Date(year, month - 1, day) 
+
+    var date2 = date2.split("/");
+    var year = date2[2];
+    var month = date2[1]; 
+    var day =  date2[0]; 
+    date2=new Date(year, month - 1 , day)
+    
+    var diff = days_between(date1,date2);
+    document.getElementById("date3").value = diff;
+}
+
+function days_between(date1, date2) {
+    //milliseconds in a day
+    var ONE_DAY = 1000 * 60 * 60 * 24
+   //both dates to milliseconds
+    var date1_ms = date1.getTime()
+    var date2_ms = date2.getTime()
+    // Calculate the difference in milliseconds
+    var difference_ms = Math.abs(date1_ms - date2_ms)
+    // Convert back to days and return
+    return Math.round(difference_ms/ONE_DAY)
+}
+//-->
+</script>
+</body>
+</html>

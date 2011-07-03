@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
+<title>Image task 28-04-2011</title>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+   
+<script type="text/javascript">
+
+function pic1()
+{
+ objectlink=document.getElementById('flower').src="images/bg1.jpg";
+
+}
+function pic2()
+{
+ objectlink=document.getElementById('flower').src="earth.jpeg";
+
+}
+function pic3()
+{
+path="Pyramids1.jpg"
+ objectlink=document.getElementById('flower').src=path;
+
+}
+
+
+
+function changepic()
+{
+
+objectlink=document.getElementById("flower").src = "friend.jpg";
+    
+}
+
+</script>
+
+</head>
+  <body id="homebackground">
+
+    <div id="homeheader">
+        
+    </div>
+
+    <div id="leftsidebar">
+      <p><b>Select one to view</b></p>
+      <p onclick="pic1()">flower</p>
+      <p onclick="pic2()">earth</p>
+      <p onclick="pic3()">pyramid</p>
+     
+    </div>
+
+    <div id="rightsidebar">
+       
+       <img id="flower" src="objectlink" width="600px" height="500px" onmouseover="changepic()">
+       
+    </div>
+
+</body>
+</html>

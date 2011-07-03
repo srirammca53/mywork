@@ -1,0 +1,51 @@
+
+
+ <%= javascript_include_tag 'picky_color' %>
+ 
+
+
+<%= form_for(@post) do |f| %>
+ <%= picky_color :post, :color, :draggable => true, :close_text => "ColorMe!", :default => "0fe" %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+     
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div style="background-color: rgb(106, 0, 255);" class="color-picker_color">
+<div>
+<div style="left: 60px; top: 21px;"></div>
+</div>
+</div>
+<br/>
+<div class="color-picker-box">
+    <label for="team_primary_color">Primary color</label>
+  <input class="txt" id="colorpickerField1" name="team[color_1]" size="30" style="" value="#000000" type="text"><div class="color-selector" style="background-color: rgb(23, 166, 159);"></div>
+</div>
+<br/>
+<br/>
+<br/>
+<div>
+<%= picky_color_tag :post, :color, :id => "color-picker-box" %>
+</div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

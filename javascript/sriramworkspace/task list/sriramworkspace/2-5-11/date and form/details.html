@@ -1,0 +1,112 @@
+<html>
+<title>form</title>
+<head>
+
+
+</head>
+<body>
+
+<center>
+<script type="text/javascript">
+function checkDetails(){
+document.getElementById('string').value;
+alert(document.getElementById('string').value);
+
+	if(document.f.gender[0].checked != true && document.f.gender[1].checked != true){
+		alert("Please select the gender...!");
+		document.f.gender[0].focus();
+		return false;
+         
+	}
+	if(document.f.gender[0].checked==true)
+	{
+ 	alert(document.f.gender[0].value);
+   	}
+	if(document.f.gender[1].checked==true)
+	{	
+       	alert(document.f.gender[1].value);
+	}
+
+   	
+          if(document.f.skills[0].checked!=true && document.f.skills[1].checked!=true)
+	{
+	alert("No options slected ");
+	
+	}
+
+	if(document.f.skills[0].checked==true)
+	{
+	alert("you selected c");
+	}
+ 	
+	if(document.f.skills[1].checked==true)
+	{
+	alert("you selected c++");
+	}
+
+       
+
+
+if(document.f.country[0].selectedIndex==true)
+{
+alert(document.f.country[0].selectedIndex.value);
+}
+
+if(document.f.country[1].selectedIndex==true)
+{
+alert("Srilanka");
+}
+
+if(document.f.country[2].selectedIndex==true)
+{
+alert("America");
+}
+
+}
+</script>
+<form name ="f" id="f" onsubmit="return checkDetails();">
+<table border="0px">
+<tr>
+<td>
+Enter name:
+</td><td><input type="text" id="string"></td>
+<tr>
+<td>Gender</td>
+<td>
+
+<input type="radio" name="gender" value="male"/>Male<br />
+<input type="radio" name="gender" value="female" />Female
+
+</td>
+</tr>
+<tr>
+<td>
+skills
+</td>
+<td>
+
+<input type="checkbox" name="skills" value="C" />C<br />
+<input type="checkbox" name="skills" value="C++" />C++<br/>
+
+</td>
+</tr> 
+<tr>
+<td>select country</td>
+<td><select name="country">
+<option >India</option>
+<option>Srilanka</option>
+<option>America</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Your details</td><td><textarea rows="4" cols="20" id="disp" value="disp">
+</textarea></td>
+</tr> 
+</table>
+<input type="submit" value="display">
+</form>
+</center>
+</body>
+</html>
+

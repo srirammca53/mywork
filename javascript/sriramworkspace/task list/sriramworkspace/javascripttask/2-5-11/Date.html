@@ -1,0 +1,71 @@
+<html>
+<title>Date</title>
+<head>
+
+<script type="text/javascript">
+
+var d=new Date();
+document.write(d);
+
+function days() 
+{
+var day1=document.getElementById('day1');
+var mon1=document.getElementById('mon1');
+var year1=document.getElementById('year');
+
+var t1=(day1"/"mon1"/"year1);
+document.write(t1);        
+ 
+   /
+
+        var one_day=1000*60*60*24; 
+mon//Here we need to split the inputed dates to convert them into standard format
+
+//for furter execution
+        var x=t1.split("/");     
+        var y=t2.split("/");
+  //date format(Fullyear,month,date) 
+
+
+        var date1=new Date(x[2],(x[1]-1),x[0]);
+  
+        var date2=new Date(y[2],(y[1]-1),y[0])
+        var month1=x[1]-1;
+        var month2=y[1]-1;
+        
+        //Calculate difference between the two dates, and convert to days
+
+               
+        _Diff=Math.ceil((date2.getTime()-date1.getTime())/(one_day)); 
+//_Diff gives the diffrence between the two dates.
+
+
+}
+
+
+
+
+</script>
+
+
+</script>
+
+</head>
+
+<body>
+<form name="getForm">
+Enter first date:<br />
+Day: <input type="text" name="getDay1" length=2 value="01" size="2" id="day1"/>
+Month: <input type="text" name="getMonth1" length=2 value="01" size="2" id="month1"/>
+Year: <input type="text" name="getYear1" length=4 value="2005" size="4" id="year1"/>
+<br /><br/>
+Enter second date:<br />
+Day: <input type="text" name="getDay2" length=2 value="01" size="2" id="day2"/>
+Month: <input type="text" name="getMonth2" length=2 value="01" size="2" id="month2"/>
+Year: <input type="text" name="getYear2" length=4 value="2005" size="4" id="year2"/>
+<br /><br/>
+
+<input type="button" value="no of days" onclick="days()">
+</form>
+</body>
+</html>

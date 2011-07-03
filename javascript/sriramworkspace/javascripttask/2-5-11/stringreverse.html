@@ -1,0 +1,50 @@
+<html>
+<title>Reverse</title>
+<head>
+
+
+</head>
+<body>
+
+<center>
+<script type="text/javascript">
+
+function length1()
+{
+var rev=document.getElementById('string1').value;
+var i=rev.length;
+document.getElementById('rev').value=rev.length;
+}
+
+function revString()
+{
+var rev=document.getElementById('string1').value;
+var i=rev.length;
+var newString = ""; 
+       
+      for (i;i > 0 ;i--) 
+             { 
+         newString += rev.substring(i-1, i); 
+            } 
+      document.getElementById('disp').value=newString;
+
+
+}
+
+</script>
+<form id="form1">
+<table border="0px">
+<tr>
+<td>
+Enter name:<input type="text" id="string1" onkeyup="length1()"></td>
+<td><input type="button" value="display" onclick="revString()"></td>
+<td>length:<textarea rows="2" cols="5" id="rev" value="textareaobject.value"></textarea></td>
+<td>reverse string:</td><td><textarea rows="4" cols="20" id="disp">
+</textarea></td>
+</tr> 
+</table>
+</form>
+</center>
+</body>
+</html>
+

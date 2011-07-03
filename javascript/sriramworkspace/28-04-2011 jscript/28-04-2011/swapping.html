@@ -1,0 +1,39 @@
+<html>
+<title>swap with temp</title>
+<head>
+<script type="text/javascript">
+function swap()
+{
+document.getElementById('a');
+document.getElementById('b');
+//document.write("you entered:"+a.value);
+alert("before swaping: a="+a.value+'\n'+"b="+b.value);
+var temp;
+temp=a;
+a=b;
+b=temp;
+
+alert("after swaping: a="+a.value+'\n'+"b="+b.value);
+ 
+}
+</script>
+
+
+<body>
+<form>
+<center>
+<table>
+<tr>
+<td>Enter a:</td>
+<td><input type="text" id="a"></td>
+</tr>
+<tr>
+<td>Enter b:</td>
+<td><input type="text" id="b"></td>
+</tr>
+</table>
+<input type="button" value="check" onclick="swap()">
+</center>
+</form>
+</body>
+<html>

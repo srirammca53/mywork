@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<script type="text/javascript">
+
+function checkIt()
+{
+for(var i=0;i<3;i++)
+{
+var c=prompt("enter number","3");
+if(c==2)
+{
+document.f.check.disabled=true;
+}
+else
+document.f.check.disabled=false;
+}
+}
+
+
+</script>
+
+</head>
+
+<body>
+<form name="f" id="f">
+<input type="button" value="check" id="check" name="check" onclick="checkIt();">
+</form>
+</body>
+
+</html>
+

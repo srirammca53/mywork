@@ -1,0 +1,110 @@
+<html>
+<title>table</title>
+<head>
+</head>
+
+<script type="text/javascript">
+
+function check()
+{
+var r=parseInt(document.getElementById('ch2').value);
+var c=parseInt(document.getElementById('ch3').value);
+
+      /*if(isNaN(r))
+           {
+           alert("null,zero, alphabets and special characters are not allowed");
+           }
+
+         if(isNaN(c))
+           {
+           alert("null,zero, alphabets and special characters are not allowed");
+           }*/
+
+        
+ }
+
+function display()
+ {
+   var row=parseInt(document.getElementById('ch2').value);
+   var col=parseInt(document.getElementById('ch3').value);
+   var rselection=parseInt(document.getElementById('ch4').value);
+   var cselection=parseInt(document.getElementById('ch5').value);
+
+   var text=document.getElementById('ch').value;
+
+    document.write('<table border="2">');
+
+      for(var i=1;i<=row;i++)
+          {  
+          
+           if(i==rselction)
+            {
+             for(var j=1;j<=col;j++)
+                 {
+                   if(j==cselection)
+                       {
+                          document.write('<td width="40" height="20">');
+                          document.write(text);
+                          document.write('</td>');
+                       }
+                  document.write('<td width="40" height="20">');
+                  document.write('&nbsp;');
+                  document.write('</td>');         
+                 }
+           }
+           
+            document.write('<tr>');
+ 
+            for(var j=1;j<=col;j++)
+              {
+               document.write('<td width="40" height="20">');
+               document.write('&nbsp;');
+               document.write('</td>');
+    
+        	    }
+            document.write('</tr>');
+          }
+        document.write('</table>');
+  }
+
+</script>
+<body>
+<table>
+<tr>
+<td>Enter a string:</td>
+<td><input type="text" id="ch" >
+</tr>
+<tr>
+<td>
+Enter no of rows:
+</td>
+<td>
+<input type="text" id="ch2" onkeyup="check()">
+</td>
+</tr>
+<tr>
+<td>
+Enter no of Columns:</td>
+<td>
+<input type="text" id="ch3" onkeyup="check()">
+</td>
+</tr>
+<tr>
+<td>
+specify row no:</td>
+<td>
+<input type="text" id="ch4" onkeyup="check()">
+</td>
+</tr><tr>
+<td>
+specify column no:</td>
+<td>
+<input type="text" id="ch5" onkeyup="check()">
+</td>
+</tr>
+</table>
+
+<br>
+<input type="button" value="display" onclick="display()">
+</body>
+</html>

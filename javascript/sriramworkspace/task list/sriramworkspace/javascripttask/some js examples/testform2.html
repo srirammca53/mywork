@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Document Title </title>
+<script type="text/javascript">
+<!--
+function myFunc()
+{
+   var ret = document.getElementsByTagName("title");
+   alert("Document Title : " + ret[0].text );
+
+   var ret = document.getElementById("heading");
+   alert(ret.innerHTML );
+}
+//-->
+</script>
+</head>
+<body>
+<h1 id="heading">This is main title</h1>
+<p>Click the following to see the result:</p>
+
+<form id="form1" name="FirstForm">
+<input type="button" value="Click Me" onclick="myFunc();" />
+<input type="button" value="Cancel">
+</form>
+
+<form d="form2" name="SecondForm">
+<input type="button" value="Don't ClickMe"/>
+</form>
+
+</body>
+</html>
+

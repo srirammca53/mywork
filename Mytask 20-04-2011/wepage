@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>
+MyTask 20-04-2011
+<body>
+<table width="400px" border="1">
+   <tr>
+    <td rowspan="2">left block</td>
+    <td>first</td>
+      </tr>
+  <tr>
+    <td>second</td>
+  </tr>
+
+  <tr>
+    <td>third</td>
+    <td rowspan="2">right block</td>
+  </tr>
+  <tr>
+    <td>fourth</td>
+  </tr>
+</table>
+
+</body>
+</head>
+</html>
